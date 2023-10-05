@@ -1,0 +1,491 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+}
+
+/* -------HEADER ---------- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.nav li{
+  font-weight: 900;
+  font-size: 14px;
+}
+.nav-avatar {
+  display: flex;
+  padding: 0.1rem;
+  align-items: center;
+}
+
+.img-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #cacaca;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav-avatar p {
+  color: rgb(30, 114, 71);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.img-avatar:hover {
+  background-color: #a2ba98;
+  transition: all .3s;
+}
+.nav-avatar p:hover {
+  color: rgb(177, 209, 192);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+/* ------- HOME ---------- */
+
+#home {
+  margin: 0px;
+  background-color: rgb(71, 153, 69);
+  position: relative;
+  margin-top: 70px;
+}
+
+.sociais-home {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  z-index: 1; /* Defina a lista como absoluta */
+  top: 50%; /* Ajuste a posição vertical para o centro */
+  left: 0; /* Alinhe à direita da sessão */
+  transform: translateY(-50%); /* Corrija a posição vertical */
+}
+
+.sociais-home ul {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.sociais-home li {
+  flex: 1;
+  font-size: 20px;
+  padding: 15px;
+  background-color: rgb(71, 153, 69);
+  margin: 0px 0px;
+  color: white;
+  border: 2px solid white;
+}
+
+.sociais-home li:hover {
+  background-color: rgb(84, 129, 66);
+  transition: all 0.3s;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 10%;
+  align-items: center;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.home > h1 {
+  padding: 2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.home > p {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+
+/* ------- ABOUT ME ---------- */
+
+.about h1 {
+  text-align: start;
+  padding: 20px 0px;
+}
+
+/* ------- PROJECTS ---------- */
+
+/* ------- CONTACT ---------- */
+
+/* ------- FOOTER ---------- */
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 30px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  margin: 30px;
+  color: rgb(30, 114, 71);
+}
+
+.btn button {
+  padding: 20px 70px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+}
+
+.btn button:hover {
+  border-color: rgb(71, 153, 69);
+  background-color: rgb(136, 189, 135);
+  transition: all 0.4s;
+}
+
+.icones-social {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+}
+
+.btn2 > button {
+  padding: 1rem 3rem;
+  border-radius: 4%;
+  background: rgb(42, 138, 85);
+  color: aliceblue;
+  margin-top: 30px;
+  font-size: 1rem;
+  border: none;
+}
+
+.btn2 > button:hover {
+  padding: 1rem 3rem;
+  border-radius: 7%;
+  background: rgb(134, 168, 134);
+  transition: all 0.3s;
+}
+
+.get {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding: 20px 60px;
+}
+.get p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: gray;
+}
+
+.my-skills {
+  padding: 0px 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  padding: 30px 0px;
+}
+
+.skills > li {
+  padding: 12px 15px;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  background: rgb(132, 192, 144);
+  border-radius: 3px;
+  font-weight: bold;
+  color: rgb(250, 245, 245);
+  font-size: 15px;
+}
+
+.skills > li:hover {
+  background: rgb(84, 129, 66);
+  transition: all 0.3s;
+}
+
+#header {
+  height: 90px;
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.98;
+  width: 100%;
+  border-bottom: solid rgb(229, 236, 229) 1px;
+}
+
+#header a:hover {
+  color: #86a886;
+}
+
+.titulo {
+  text-align: center;
+  padding: 80px;
+}
+
+img {
+  width: 700px;
+  height: 420px;
+  border-radius: 5%;
+  display: flex;
+  margin-left: 70px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-start {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.row {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row-col {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 796) {
+  .row-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.row-col {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 796) {
+  .row-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.projects {
+  padding: 10px 40px;
+  align-items: start;
+}
+
+.projects h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #364b36;
+}
+
+.projects p {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 11px;
+}
+
+.contact {
+  padding-top: 3rem;
+  background-image: url("https://www.parededepapel.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/papel-de-parede-3d-realista-folhagem-costela-de-adao.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-coletivo {
+  padding: 7rem 0rem;
+}
+.titulo-coletivo h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #000;
+}
+
+.titulo-coletivo p {
+  font-size: 18px;
+  text-align: center;
+  color: gray;
+}
+
+.contact .linha {
+  background-color: white;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact p {
+  color: #fff;
+}
+
+form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 3rem 4rem;
+  border-radius: 5px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 4rem;
+  width: 45rem;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+form button {
+  align-self: self-end;
+}
+
+form input,
+textarea {
+  color: #333;
+  font-size: 1rem;
+  padding: 1.6rem;
+  border: 1px solid #ebebeb;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+footer {
+  padding: 10px 40px;
+  background-color: black;
+  color: #ebebeb;
+  bottom: 0;
+  weight: 100%;
+}
+
+.footer-text {
+  padding: 30px 10px;
+}
+.footer-text > h4 {
+  font-size: 1.5rem;
+}
+
+.footer-text > p {
+  font-size: 14px;
+}
+
+.social {
+  text-align: end;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+.img-social > img {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+hr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.copy {
+  border-top: solid #fff 1px;
+  text-align: center;
+  margin: 2rem 1rem;
+  padding-top: 1rem;
+}
+.linha {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 6px;
+  border-radius: 28%;
+  background-color: rgb(19, 116, 51);
+}
+.borda-inferior {
+  position: relative;
+  margin-bottom: 20px; /* Espaçamento opcional entre as seções */
+}
+
+.borda-inferior::after {
+  content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 6px;
+  border-radius: 28%;
+  background-color: rgb(19, 116, 51);
+}
+
+.redes-sociais h4 {
+  margin-top: 20px;
+  text-align: center;
+}
+.redes-sociais li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  color: #fff;
+  padding: 8px;
+  margin: 3px 3px;
+  border-radius: 25px;
+}
+
+.redes-sociais li:hover {
+  background-color: rgb(19, 116, 51);
+  border-box: solid #fff 1px;
+  transition: all 0.4s;
+}
